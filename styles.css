@@ -1,0 +1,307 @@
+/*font-family: 'Raleway', sans-serif;*/
+*{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color:gray;
+    overflow-x:hidden;
+}
+::-webkit-scrollbar {
+    width: 25px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 136, 0);
+    border-radius: 10px 10px 0px 0px;
+  }
+
+.no-select{
+    -webkit-user-select: none; /* Safari */    /*   This is so there */
+    -moz-user-select: none; /* Firefox */     /* is no cursor change*/
+    -ms-user-select: none; /* IE10+/Edge */  /* when hovering over */
+    user-select: none; /* Standard */       /* the menu options  */
+}
+
+.page{
+    display:block;
+    position:absolute;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width:100%;
+    height:90%;
+    top:0%;
+    right:0%;
+    z-index: 5;
+}
+.pfp{
+    position:absolute;
+    width:15%;
+    right:10%;
+    top:35%;
+}
+
+#page0{
+    background-color: rgb(105, 104, 104);
+    
+}
+#page0 h1{
+    position:absolute;
+    color:rgb(45, 171, 255);
+    font-size:3rem;
+    top:10%;
+    left:15%;
+}
+.bio-container{
+    position:absolute;
+    width:50%;
+    height:50%;
+    background-color:rgb(161, 161, 161);
+    border-color: rgb(45, 171, 255);
+    border-width: 5px;
+    border-style: solid;
+    border-radius:20px;
+    padding-left:25px;
+    padding-right:25px;
+    left:15%;
+    top:30%;
+}
+#page0 h2{
+    position:relative;
+    color:white;
+    font-size:1.5rem;
+}
+#page1{
+    background-color: rgb(58, 59, 77);
+    left:100%;
+}
+#page1 h1{
+    position:absolute;
+    display:block;
+    color:rgb(255, 136, 0);
+    font-size:3rem;
+    width:100%;
+    top:7.5%;
+    padding:0%;
+    margin:0%;
+    text-align:center;
+}
+
+.works-container{
+    position:absolute;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; 
+    align-items: stretch;
+    width:80%;
+    height:50%;
+    top:25%;
+    left:10%;
+    overflow:hidden;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.works{
+    flex:1 1 auto;
+    min-width:5%;
+    cursor:pointer;
+    overflow-x:hidden!important;
+    padding:0%;
+    margin:0%;
+}
+
+
+#works0{
+    background-color: rgb(255,212,136);    
+    background-image: url("/pictures/testpic.png");
+    background-repeat: no-repeat;
+    
+}
+
+#works1{
+    background-color:rgb(128, 128, 128);    
+}
+#works2{
+   background-color:rgb(90, 90, 90);    
+}
+#works3{
+    background-color:rgb(65, 65, 65)
+}
+.works-container img{
+    position:absolute;
+    top:5%;
+    height:90%;
+}
+
+.popup{
+    position:absolute;
+    display:block;
+    height:95%;
+    width:70%;
+    border-style: unset;
+    border-radius: 20px 20px 0px 0px;
+    top:5%;
+    left:10%;
+    background-color:rgb(48, 48, 48);
+    z-index:20;
+    font-size:3rem;
+    padding: 0% 5% 0% 5%;
+    overflow-y:scroll;
+}
+
+.exit{
+    color:white;
+    position:absolute;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+    font-size:2rem;
+    left:0%;
+    cursor: pointer;
+    background-color: rgb(121, 121, 121);
+}
+.exit:hover{
+    background-color: rgb(210, 81, 42);
+}
+.popup h1{
+    color:rgb(255, 136, 0);
+    width:0%;   
+    top:0%;
+    left:0%;
+    position:relative;
+}
+.popup h2{
+    position:relative;
+    font-size:2rem;
+    color:rgb(255, 174, 0);
+}
+.popup h3{
+    position:relative;
+    font-size:1rem;
+    font-weight: 100;
+    color:rgb(177, 177, 177);
+    text-align: center;
+}
+.popup p{
+    font-size:1rem;
+    color:rgb(228, 228, 228);
+    line-height: 2rem;
+}
+.popup img{
+    width:90%;
+    margin:0% 5% 0% 5%;
+}
+.image-cropper{
+    border-radius:50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(25,25,25,);
+}
+
+#page2{
+    background-color: rgb(067,047,049);
+    left:200%;
+}
+.main-footer{
+    display: block;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color:  rgb(31, 31, 31);
+    width:100%;
+    left:0%;
+    bottom:0%;
+    height:10%;
+    z-index:100;
+    
+}
+
+.socialmedia-container{
+    display:flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width:30%;
+    left:35%;
+    bottom:0%;
+    height:10%;
+    z-index:100;
+}
+
+.socialmedia-container img{
+    top:25%;
+    padding-top:10px;
+    height:75%;
+}
+.socialmedia-container a{
+    height:100%;
+}
+
+
+
+
+.contact-container{
+    font-family: 'Raleway', sans-serif;
+    font-size:1rem;
+    color:rgb(45, 171, 255);
+    padding-right:20px;
+    text-align: right;
+    vertical-align: middle;
+    position: absolute;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width:40%;
+    right:0%;
+    bottom:0%;
+    height:11%;
+}
+.imagecount-container{
+    z-index:10;
+    position:absolute;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width:30%;
+    height:5%;
+    top:82.5%;
+    left:35%;
+}
+
+.imagecounter{
+    height:100%;
+}
+
+#arrow1{
+    z-index:10;
+    position:absolute;
+    height:10%;
+    top:40%;
+    left:2.5%;
+    transform: scaleX(-1);
+    cursor: pointer;
+    opacity:0.25;
+}
+#arrow2{
+    z-index:10;
+    position:absolute;
+    height:10%;
+    top:40%;
+    right:2.5%;
+    cursor: pointer;
+    opacity:0.25;
+}
+#arrow1:hover{
+    content:url("icons/arrow2.png");
+    opacity:1;
+}
+#arrow2:hover{
+    content:url("icons/arrow2.png");
+    opacity:1;
+}
