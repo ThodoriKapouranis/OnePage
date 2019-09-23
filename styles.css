@@ -46,7 +46,7 @@ body{
 }
 
 #page0{
-    background-color: rgb(105, 104, 104);
+    background-color: rgb(104, 104, 104);
     
 }
 #page0 h1{
@@ -75,8 +75,9 @@ body{
     color:white;
     font-size:1.5rem;
 }
+/*rgb(58,59,77)*/
 #page1{
-    background-color: rgb(58, 59, 77);
+    background-color: rgb(58,59,77);
     left:100%;
 }
 #page1 h1{
@@ -86,6 +87,22 @@ body{
     font-size:3rem;
     width:100%;
     top:7.5%;
+    padding:0%;
+    margin:0%;
+    text-align:center;
+}
+
+#page2{
+    background-color: rgb(56,85,77);
+    left:200%;
+}
+#page2 h1{
+    position:absolute;
+    display:block;
+    color:rgb(252,252,103);
+    font-size:3rem;
+    width:100%;
+    top:45%;
     padding:0%;
     margin:0%;
     text-align:center;
@@ -203,10 +220,7 @@ body{
     border-color:rgb(25,25,25,);
 }
 
-#page2{
-    background-color: rgb(067,047,049);
-    left:200%;
-}
+
 .main-footer{
     display: block;
     position: absolute;
