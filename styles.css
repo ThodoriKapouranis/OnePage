@@ -134,7 +134,7 @@ body{
 
 #works0{
     background-color: rgb(255,212,136);    
-    background-image: url("/pictures/testpic.png");
+    background-image: url("pictures/testpic.png");
     background-repeat: no-repeat;
     
 }
