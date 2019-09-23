@@ -168,6 +168,8 @@ body{
     font-size:3rem;
     padding: 0% 5% 0% 5%;
     overflow-y:scroll;
+    animation-name: popUpAppear;
+    animation-duration: .5s;
 }
 
 .exit{
@@ -206,13 +208,31 @@ body{
     text-align: center;
 }
 .popup p{
-    font-size:18px;
+    font-size:20px;
+    color:rgb(228, 228, 228);
+    line-height: 2rem;
+}
+.popup ul{
+    font-size:20px;
     color:rgb(228, 228, 228);
     line-height: 2rem;
 }
 .popup img{
+    display:block;
     width:90%;
-    margin:0% 5% 0% 5%;
+    margin:auto;
+}
+.popup video{
+    height:50%;
+    display:block;
+    margin:auto;
+}
+
+@keyframes popUpAppear{
+    from{top:100%;
+        opacity:0;};
+    to{top:0%;
+        opacity:1;};
 }
 .image-cropper{ /*Not being used currently*/
     border-radius:50%;
@@ -284,7 +304,7 @@ body{
     justify-content: space-evenly;
     flex-direction: row;
     width:30%;
-    height:5%;
+    height:40px;
     top:82.5%;
     left:35%;
 }
@@ -296,7 +316,7 @@ body{
 #arrow1{
     z-index:10;
     position:absolute;
-    height:10%;
+    height:80px;
     top:40%;
     left:2.5%;
     transform: scaleX(-1);
@@ -306,7 +326,7 @@ body{
 #arrow2{
     z-index:10;
     position:absolute;
-    height:10%;
+    height:80px;
     top:40%;
     right:2.5%;
     cursor: pointer;

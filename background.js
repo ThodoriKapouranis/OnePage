@@ -1,7 +1,7 @@
 homeImageState=0
 totalPages=3
 workState=0
-totalWorks=4
+totalWorks=4 //you can just get this from looking at html length
 
 function checkHomeState(){
     for(i=0;i<totalPages;i++){
@@ -99,8 +99,7 @@ function workEvent(work){
     $("#works"+work).mousedown(function(){
         var title= document.getElementById("pjname");
         if(this.style.minWidth=="5%"){
-
-            if (workState==0){
+            if(workState){
                 for(i=0;i<totalWorks;i++){
                     $("#works"+i).animate(
                         {"min-width":"5%"},
@@ -130,6 +129,7 @@ function workEvent(work){
                     {duration:150,
                     easing:"linear"})
              }
+             workState=0;
             title.style.color='rgb(255, 136, 0)';
             title.style.textDecoration='none';
             title.style.cursor='default';
@@ -148,8 +148,13 @@ function titleClick(){
         else{
         var popup = document.createElement('div');
         popup.className="popup";
-        popup.innerHTML=pjHTML[0]
-        document.getElementsByClassName("page")[1].appendChild(popup);
+        for(i=0;i<totalWorks;i++){
+            if (this.innerHTML==projectName[i]){
+                popup.innerHTML=pjHTML[i]
+                document.getElementsByClassName("page")[1].appendChild(popup);
+            }
+        }
+        
         }
     })
 }
