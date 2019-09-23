@@ -40,7 +40,7 @@ body{
 }
 .pfp{
     position:absolute;
-    width:15%;
+    width:200px;
     right:10%;
     top:35%;
 }
@@ -52,7 +52,7 @@ body{
 #page0 h1{
     position:absolute;
     color:rgb(45, 171, 255);
-    font-size:3rem;
+    font-size:72px;
     top:10%;
     left:15%;
 }
@@ -73,7 +73,7 @@ body{
 #page0 h2{
     position:relative;
     color:white;
-    font-size:1.5rem;
+    font-size:28px;
 }
 /*rgb(58,59,77)*/
 #page1{
@@ -84,7 +84,7 @@ body{
     position:absolute;
     display:block;
     color:rgb(255, 136, 0);
-    font-size:3rem;
+    font-size:60px;
     width:100%;
     top:7.5%;
     padding:0%;
@@ -100,7 +100,7 @@ body{
     position:absolute;
     display:block;
     color:rgb(252,252,103);
-    font-size:3rem;
+    font-size:36px;
     width:100%;
     top:45%;
     padding:0%;
@@ -187,6 +187,7 @@ body{
 }
 .popup h1{
     color:rgb(255, 136, 0);
+    font-size: 10px;
     width:0%;   
     top:0%;
     left:0%;
@@ -194,18 +195,18 @@ body{
 }
 .popup h2{
     position:relative;
-    font-size:2rem;
+    font-size:36px;
     color:rgb(255, 174, 0);
 }
 .popup h3{
     position:relative;
-    font-size:1rem;
+    font-size:18px;
     font-weight: 100;
     color:rgb(177, 177, 177);
     text-align: center;
 }
 .popup p{
-    font-size:1rem;
+    font-size:18px;
     color:rgb(228, 228, 228);
     line-height: 2rem;
 }
@@ -213,7 +214,7 @@ body{
     width:90%;
     margin:0% 5% 0% 5%;
 }
-.image-cropper{
+.image-cropper{ /*Not being used currently*/
     border-radius:50%;
     border-style: solid;
     border-width: 3px;
