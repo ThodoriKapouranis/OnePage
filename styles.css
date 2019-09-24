@@ -135,6 +135,7 @@ body{
 #works0{
     background-color: rgb(255,212,136);    
     background-image: url("pictures/testpic.png");
+    height:100%;
     background-repeat: no-repeat;
     
 }
